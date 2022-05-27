@@ -4,7 +4,6 @@ import { Menu } from "@mui/material";
 import { MenuItem } from "@mui/material";
 import { Divider } from "@mui/material";
 import AOS from "aos";
-import scroll from "react-scroll";
 
 import { motion } from "framer-motion";
 
@@ -20,7 +19,6 @@ function Navbar({
   setVisibleElement,
 }) {
   const [anchorEl, setAnchorEl] = useState(null);
-  const scroll2 = scroll.animateScroll;
 
   const handleClose = () => {
     setAnchorEl(null);

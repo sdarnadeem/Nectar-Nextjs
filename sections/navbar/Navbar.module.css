@@ -31,7 +31,7 @@
   color: #fff;
   padding: 0 5%;
   position: relative;
-  animation: trans 1s linear;
+  animation: trans 0.8s linear;
 }
 
 @keyframes trans {

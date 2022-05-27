@@ -11,6 +11,7 @@ const LogoAnim = () => {
         animate={{ x: 0, rotate: 360 }}
         initial={{ x: -50 }}
         transition={{ duration: 1.5 }}
+        transitionEnd={{ y: "-1500" }}
         className={c.logo}
       >
         <Image layout="fill" src="/images/locomotive/logo.png" alt="" />

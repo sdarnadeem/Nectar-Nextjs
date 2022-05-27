@@ -31,6 +31,17 @@
   color: #fff;
   padding: 0 5%;
   position: relative;
+  animation: trans 1s linear;
+}
+
+@keyframes trans {
+  from {
+    transform: translateY(100vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 .headerlogo {
   font-size: 30px;

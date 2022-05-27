@@ -4,6 +4,9 @@ import { Menu } from "@mui/material";
 import { MenuItem } from "@mui/material";
 import { Divider } from "@mui/material";
 import AOS from "aos";
+import scroll from "react-scroll";
+
+import { motion } from "framer-motion";
 
 import styles from "./Navbar.module.css";
 
@@ -17,6 +20,7 @@ function Navbar({
   setVisibleElement,
 }) {
   const [anchorEl, setAnchorEl] = useState(null);
+  const scroll2 = scroll.animateScroll;
 
   const handleClose = () => {
     setAnchorEl(null);
@@ -32,13 +36,13 @@ function Navbar({
     });
   }, []);
 
-  document.addEventListener("mousedown", () => {
-    setVisibleElement(false);
-    closePopup(false);
-  });
+  //   document.addEventListener("mousedown", () => {
+  //     setVisibleElement(false);
+  //     closePopup(false);
+  //   });
   return (
     <>
-      <div className={styles.header} data-scroll-section>
+      <motion.div className={styles.header} data-scroll-section>
         <nav>
           <img
             className={styles.logo}
@@ -153,7 +157,7 @@ function Navbar({
             </div>
           </div>
         )}
-      </div>
+      </motion.div>
     </>
   );
 }

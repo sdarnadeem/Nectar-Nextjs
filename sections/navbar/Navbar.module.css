@@ -47,7 +47,10 @@
   font-size: 30px;
   font-family: "Libre Baskerville", serif;
 }
-.navbar nav {
+/* .nav {
+  padding-top: 1rem;
+} */
+.header nav {
   width: 100%;
   display: flex;
   align-items: center;
@@ -58,7 +61,7 @@
   display: none;
 }
 
-.navbar nav ul li {
+.header nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 30px;
@@ -69,13 +72,13 @@
   cursor: pointer;
 }
 
-.navbar nav ul li a {
+.header nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 17px;
   letter-spacing: 1px;
 }
-.navbar nav ul li a:hover {
+.header nav ul li a:hover {
   color: #ff3e3b;
   border-bottom: 1px solid #ff3e3b;
 }
@@ -96,8 +99,9 @@
   outline: none;
   font-size: 16px;
   margin-top: 30px;
+  color: #fff;
   background: #ff3e3b;
-  padding: 14px 40px;
+  padding: 14px 20px;
 }
 
 .down {

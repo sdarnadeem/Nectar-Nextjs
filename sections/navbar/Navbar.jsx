@@ -41,7 +41,7 @@ function Navbar({
   return (
     <>
       <motion.div className={styles.header} data-scroll-section>
-        <nav>
+        <nav className={styles.nav}>
           <img
             className={styles.logo}
             src="/images/dating/logoo.png"

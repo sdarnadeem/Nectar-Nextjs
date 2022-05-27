@@ -1,0 +1,220 @@
+/* .topbg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: changeImage 20s linear infinite;
+}
+.topbgspan {
+  background-color: black;
+}
+
+.topnav {
+  padding: 1% 3%;
+}
+.borderleft {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid white;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+.header {
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("Images/datingNew/background.png"); */
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 0 5%;
+  position: relative;
+}
+.headerlogo {
+  font-size: 30px;
+  font-family: "Libre Baskerville", serif;
+}
+.navbar nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 10px;
+}
+.menu {
+  display: none;
+}
+
+.navbar nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.navbar nav ul li a:hover {
+  color: #ff3e3b;
+  border-bottom: 1px solid #ff3e3b;
+}
+
+.textbox {
+  margin-top: 16%;
+  font-size: 22px;
+  position: relative;
+}
+
+.textbox h2 {
+  font-size: 85px;
+  font-weight: 600;
+  line-height: 100px;
+}
+.textbox .btn {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-top: 30px;
+  background: #ff3e3b;
+  padding: 14px 40px;
+}
+
+.down {
+  position: absolute;
+  bottom: 2rem;
+  right: 7%;
+}
+.down img {
+  animation: move 2s linear infinite;
+  cursor: pointer;
+}
+
+.downred {
+  display: none;
+}
+.down:hover .downred {
+  display: inline;
+}
+
+.down:hover .downwhite {
+  display: none;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .textbox {
+    margin-top: 26%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .textbox {
+    margin-top: 34%;
+  }
+  .textbox h2 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .textbox {
+    margin-top: 34%;
+  }
+  .textbox h2 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+}
+@media screen and (max-width: 1024px), screen and (max-height: 600px) {
+  .textbox {
+    margin-top: 14%;
+  }
+}
+@media screen and (max-width: 889px) {
+  .textbox {
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textbox {
+    margin-top: 40%;
+    text-align: center;
+  }
+  .textbox br {
+    display: none;
+  }
+  .textbox h2 {
+    font-size: 45px;
+  }
+  .textbox p {
+    font-size: 19px;
+  }
+  .down {
+    bottom: 2%;
+    right: 47%;
+  }
+  .navul {
+    display: none;
+  }
+  .logo {
+    width: 110px;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .textbox h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .textbox p {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .textbox {
+    margin-top: 70%;
+  }
+  .textbox .btn {
+    padding: 7px 6px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .textbox h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .textbox p {
+    font-size: 11px;
+  }
+  .textbox {
+    margin-top: 90%;
+  }
+  .down {
+    right: 45%;
+  }
+}

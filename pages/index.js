@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
 import About from "../sections/about/About";
 
+import Featured from "../sections/featured/Featured";
+
 export default function Home() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -19,6 +21,13 @@ export default function Home() {
       });
     }, 3000);
   });
+
+  function hanldeViewChange(inView, entry) {
+    console.log(inView);
+    if (inView) {
+      setOpen(true);
+    }
+  }
   return (
     <>
       {loading && <LogoAnim />}

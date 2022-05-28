@@ -1,0 +1,116 @@
+.featured-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.featured-section img {
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+.featured-section h6 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.featured-section .featured-row-layout,
+.featured-section .featured-column-layout {
+  display: grid;
+  gap: 10px;
+}
+
+.popupbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c6cbcf98;
+  display: grid;
+  place-items: center;
+}
+.popup {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+.popup h4 {
+  font-size: 1.5em;
+  line-height: 60px;
+}
+.popup h6 {
+  font-size: 1em;
+  color: #05cab6;
+  text-align: center;
+}
+
+.featured-section .featured-row-layout {
+  grid-template-columns: repeat(2, auto);
+}
+.featured-section .featured-row-layout img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.featured-section .featured-column-layout {
+  grid-template-columns: 100px auto;
+  align-items: flex-end;
+}
+
+.featured-section .featured-column-layout .img-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.featured-section .featured-column-layout .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.featured-section .featured-column-layout .img-container::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(241, 243, 245);
+  content: "";
+}
+
+/* .featured-section .featured-column-layout img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+} */
+
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .popup {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .popup h4 {
+    font-size: 1rem;
+  }
+  .popup h6 {
+    font-size: 0.9rem;
+  }
+}

@@ -2,6 +2,7 @@ import LogoAnim from "../sections/logoAnim/LogoAnim";
 import NavBar from "../sections/navBar/NavBar";
 import { useState, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
+import About from "../sections/about/About";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -23,9 +24,14 @@ export default function Home() {
       {loading && <LogoAnim />}
 
       {!loading && (
-        <Element name={"navbar"}>
-          <NavBar />
-        </Element>
+        <>
+          <Element name={"navbar"}>
+            <NavBar />
+          </Element>
+          <Element name="about">
+            <About />
+          </Element>
+        </>
       )}
     </>
   );

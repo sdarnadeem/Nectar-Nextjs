@@ -12,7 +12,7 @@ function Text() {
         <p>
           Relationships are an important part of a healthy life. We help you to
           discover a space where you can explore your identity and connect with
-          like minded people.
+          like minded people
         </p>
       </div>
     </div>

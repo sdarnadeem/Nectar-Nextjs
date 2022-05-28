@@ -1,11 +1,31 @@
 import React from "react";
 import styles from "./Text.module.css";
+import { motion } from "framer-motion";
 
 function Text() {
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ x: 100 }}
+      whileInView={{ x: 0 }}
+      // animate={{ x: 0 }}
+      transition={{ duration: 1, type: "tween", delay: 0.3 }}
+      key="helggdglowelhfsdfh"
+    >
       <div>
         <h6 className={styles.header}>About</h6>
+        <motion.div
+          initial={{ x: 30 }}
+          whileInView={{ x: 0 }}
+          // animate={{ x: 0 }}
+          transition={{
+            duration: 1,
+            type: "tween",
+            delay: 0.5,
+          }}
+          key="hellweowelhfsdfh"
+          className={styles.line}
+        ></motion.div>
       </div>
 
       <div>
@@ -15,7 +35,7 @@ function Text() {
           like minded people
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 60px;
 }
 .mockup {
   width: 300px;

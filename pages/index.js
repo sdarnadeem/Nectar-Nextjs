@@ -3,6 +3,8 @@ import NavBar from "../sections/navBar/NavBar";
 import { useState, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
 
+import Featured from "../sections/featured/Featured";
+
 export default function Home() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -18,14 +20,24 @@ export default function Home() {
       });
     }, 3000);
   });
+
+  function hanldeViewChange(inView, entry) {
+    console.log(inView);
+    if (inView) {
+      setOpen(true);
+    }
+  }
   return (
     <>
       {loading && <LogoAnim />}
 
       {!loading && (
-        <Element name={"navbar"}>
-          <NavBar />
-        </Element>
+        <>
+          <Element name={"navbar"}>
+            <NavBar />
+          </Element>
+          <Featured />
+        </>
       )}
     </>
   );

@@ -1,0 +1,32 @@
+.container {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mockup {
+  width: 300px;
+  height: 560px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.mockup img {
+  height: 20px;
+}
+.sliding {
+  animation: changeImage 5s linear infinite;
+  background-position: center;
+  background-size: cover;
+  height: 465px;
+}
+.sliding img {
+  height: 100%;
+  width: 100%;
+}
+.mockup p {
+  font-size: 15px !important;
+}

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,500&family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,500&family=MuseoModerno:wght@100&display=swap");
+
+.container {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 2rem 0 2rem;
+}
+
+.container h6 {
+  text-transform: uppercase;
+  font-weight: 600 !important;
+  letter-spacing: 1px;
+  font-family: "Syncopate", sans-serif;
+  font-size: 50px;
+  color: #626262;
+}
+
+.container p {
+  font-size: 2.2rem !important;
+  line-height: 1.5;
+  color: #626262;
+  text-align: justify;
+  /* font-family: "MuseoModerno", cursi; */
+}

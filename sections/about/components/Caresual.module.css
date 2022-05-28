@@ -1,0 +1,3 @@
+.carousel-indicators [data-bs-target] {
+  display: none !important;
+}

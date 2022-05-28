@@ -2,6 +2,7 @@ import LogoAnim from "../sections/logoAnim/LogoAnim";
 import NavBar from "../sections/navBar/NavBar";
 import { useState, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
+import About from "../sections/about/About";
 
 import Featured from "../sections/featured/Featured";
 
@@ -36,7 +37,9 @@ export default function Home() {
           <Element name={"navbar"}>
             <NavBar />
           </Element>
-          <Featured />
+          <Element name="about">
+            <About />
+          </Element>
         </>
       )}
     </>

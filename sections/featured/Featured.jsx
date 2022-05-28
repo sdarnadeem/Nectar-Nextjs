@@ -14,14 +14,10 @@ function Featured(props) {
   return (
     <section className={c["featured-section"]} data-scroll-section>
       <div className={c["featured-row-layout"]}>
-        <div></div>
-
         <img src="/images/locomotive/couples2.jpg" />
         {/* </div> */}
       </div>
       <div className={c["featured-column-layout"]}>
-        <div></div>
-
         <img src="/images/locomotive/couples3.jpg" />
       </div>
     </section>

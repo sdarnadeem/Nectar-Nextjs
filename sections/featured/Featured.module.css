@@ -14,6 +14,10 @@
   font-weight: 500;
 }
 
+.featured-section p {
+  font-size: 15px;
+}
+
 .featured-section .featured-row-layout,
 .featured-section .featured-column-layout {
   display: grid;

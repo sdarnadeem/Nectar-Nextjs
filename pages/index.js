@@ -3,6 +3,7 @@ import NavBar from "../sections/navBar/NavBar";
 import { useState, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
 import About from "../sections/about/About";
+import AppFeatures from "../sections/AppFeatures/AppFeatures";
 
 import Featured from "../sections/featured/Featured";
 
@@ -42,6 +43,9 @@ export default function Home() {
           </Element>
           <Element name="about">
             <About />
+          </Element>
+          <Element name="about">
+            <AppFeatures />
           </Element>
         </>
       )}

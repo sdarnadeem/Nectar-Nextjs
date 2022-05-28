@@ -64,16 +64,32 @@
   grid-template-columns: 100px auto;
   align-items: flex-end;
 }
-.featuredSection .imageContainer {
+.featuredSection .featuredColumnLayout .imageContainer {
   height: 100vh;
   width: 100%;
 }
-.featuredSection .imageContainer img {
+.featuredSection .featuredColumnLayout .imageContainer img {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  width: 67.5%;
+  width: 66%;
 }
+
+.featuredSection .featuredColumnLayout img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .featuredSection .featured-column-layout .img-container::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(241, 243, 245);
+  content: "";
+} */
 /* .featuredSection .featuredColumnLayout .imgContainer {
   height: 100vh !important;
   position: relative !;

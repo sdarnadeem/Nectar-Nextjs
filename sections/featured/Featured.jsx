@@ -21,11 +21,7 @@ function Featured(props) {
       </div>
       <div className={c.featuredColumnLayout}>
         <div></div>
-        <div className={c.imageContainer}>
-          <img src="/images/locomotive/couples3.jpg" />
-        </div>
-
-        <div></div>
+        <img src="/images/locomotive/couples3.jpg" />
       </div>
     </section>
   );

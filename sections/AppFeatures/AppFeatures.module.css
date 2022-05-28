@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@media only screen and (max-width: 767px) {
+  .image {
+    width: 80px;
+    margin-top: 0px !important;
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: center !important;
+  }
+  .imgCon {
+    justify-content: center !important;
+    justify-items: center !important;
+  }
+}
+.image {
+  width: 80px;
+  margin-top: -25px;
+}
+.para h3 {
+  font-size: 1.2rem !important;
+}
+.para p {
+  font-size: 1rem !important;
+}
+/* .pading {
+  margin-top: 9vw !important;
+} */
+@media screen and (max-width: 768px) {
+  .para {
+    padding: 3rem;
+  }
+  .pading {
+    margin-top: 0 !important;
+  }
+}
+@media screen and (max-width: 574px) {
+  .lottie {
+    width: 30% !important;
+  }
+  .lottie2 {
+    width: 25% !important;
+  }
+  .para {
+    padding: 3.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .para p {
+    font-size: 20px;
+  }
+}

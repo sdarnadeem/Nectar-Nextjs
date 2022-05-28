@@ -14,38 +14,29 @@ function Featured(props) {
   }, []);
 
   return (
-    <section className={c.featuredSection} data-scroll-section>
+    <motion.section
+      key="fhsakdghsdkghdkfh"
+      whileInView={{ opacity: [0, 1] }}
+      transition={{ duration: 0.5, type: "tween" }}
+      className={c.featuredSection}
+      data-scroll-section
+    >
       <motion.div
-        // whileInView={{ scale: 1.2 }}
-        // // animate={{ x: 0 }}
-        // transition={{ duration: 1.5, type: "tween", delay: 0.2 }}
-        // key="hellowddselhfsdfh"
+        whileInView={{ scale: 1.2 }}
+        // animate={{ x: 0 }}
+        transition={{ duration: 1.5, type: "tween", delay: 0.2 }}
+        key="hellowddselhfsdfh"
         className={c.featuredRowLayout}
       >
         <img src="/images/locomotive/couples2.jpg" />
         {/* </div> */}
-<<<<<<< HEAD
-      </div>
-      <div className={c.featuredColumnLayout}>
-        <div></div>
-        <img src="/images/locomotive/couples3.jpg" />
-      </div>
-=======
       </motion.div>
       <motion.div className={c.featuredColumnLayout}>
-        <motion.div
-          initial={{ x: 35 }}
-          whileInView={{ x: 0 }}
-          // animate={{ x: 0 }}
-          transition={{ duration: 1.5, type: "tween", delay: 0.2 }}
-          key="hellowddselhfsdfkh"
-          className={c.imageContainer}
-        >
+        <motion.div>
           <img src="/images/locomotive/couples3.jpg" />
         </motion.div>
       </motion.div>
->>>>>>> dev
-    </section>
+    </motion.section>
   );
 }
 

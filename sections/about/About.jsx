@@ -6,10 +6,15 @@ import styles from "./About.module.css";
 
 function About() {
   return (
-    <div className={styles.container}>
+    <motion.div
+      key="fhsakffdghsdkghdkfh"
+      whileInView={{ opacity: [0, 1] }}
+      transition={{ duration: 0.5, type: "tween" }}
+      className={styles.container}
+    >
       <Mockup />
       <Text />
-    </div>
+    </motion.div>
   );
 }
 

@@ -63,6 +63,7 @@ function AppFeatures() {
           </div>
           <div className={`col-12 col-sm-8  ${styles.para}`}>
             <h3> User Profiles</h3>
+            <div></div>
             <p style={{ textAlign: "justify" }}>
               We help you to make your own profiles more interesting and
               creative in a way that helps your individual personalities shine
@@ -93,6 +94,7 @@ function AppFeatures() {
           </div>
           <div className={`col-12 col-sm-8 ${styles.para}`}>
             <h3>Chat and Messaging</h3>
+            <div></div>
             <p style={{ textAlign: "justify" }}>
               With full-featured chat it will help to build better connections
               between you and your connection, increasing the chance of
@@ -121,6 +123,7 @@ function AppFeatures() {
           </div>
           <div className={`col-12 col-sm-8 ${styles.para}`}>
             <h3>Ice breakers</h3>
+            <div></div>
             <p style={{ textAlign: "justify" }}>
               Icebreaker allows you to discover the similarities with your
               match. You’ll have some easy conversation starters to break the
@@ -149,6 +152,7 @@ function AppFeatures() {
           </div>
           <div className={`col-12 col-sm-8 ${styles.para}`}>
             <h3>Voice and Video Calling</h3>
+            <div></div>
             <p style={{ textAlign: "justify" }}>
               Voice and video calling features, with filters, allows users to
               move beyond text chat into something more personal and intimate.

@@ -2,9 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
+  max-width: 100%;
+  margin: 50px 5%;
+  column-gap: 2rem;
 }
 
-.featuredSection img {
+.featuredSection div img {
   clip-path: inset(0% 0% 0% 0%);
 }
 
@@ -16,8 +19,8 @@
 
 .featuredSection .featuredRowLayout,
 .featuredSection .featuredColumnLayout {
-  display: grid;
-  gap: 10px;
+  /* display: grid; */
+  /* gap: 10px; */
 }
 
 .popupbg {
@@ -73,6 +76,7 @@
   object-fit: cover;
   position: absolute;
   width: 67.5%;
+  /* width: 100%; */
 }
 /* .featuredSection .featuredColumnLayout .imgContainer {
   height: 100vh !important;

@@ -26,3 +26,12 @@
   text-align: justify;
   /* font-family: "MuseoModerno", cursi; */
 }
+
+@media screen and (max-width: 768px) {
+  .container h6 {
+    font-size: 30px;
+  }
+  .container {
+    width: 80%;
+  }
+}

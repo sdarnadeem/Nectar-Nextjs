@@ -37,9 +37,9 @@ export default function Home() {
           <Element name={"navbar"}>
             <NavBar />
           </Element>
-          <Element name="featured">
+          {/* <Element name="featured">
             <Featured />
-          </Element>
+          </Element> */}
           <Element name="about">
             <About />
           </Element>

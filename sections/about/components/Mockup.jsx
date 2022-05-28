@@ -1,6 +1,7 @@
 import React from "react";
 import Caresual from "./Caresual";
 import styles from "./Mockup.module.css";
+import { motion } from "framer-motion";
 
 function Mockup() {
   const images = [
@@ -11,7 +12,14 @@ function Mockup() {
   ];
 
   return (
-    <div className={styles.container}>
+    <motion.div
+      initial={{ x: -100 }}
+      whileInView={{ x: 0 }}
+      // animate={{ x: 0 }}
+      transition={{ duration: 1, type: "tween", delay: 0.5 }}
+      className={styles.container}
+      key="hellowelhfsdfh"
+    >
       <div className={styles.mockup}>
         <div
           className="d-flex justify-content-between mt-2  w-100 px-4"
@@ -49,7 +57,7 @@ function Mockup() {
           ></div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

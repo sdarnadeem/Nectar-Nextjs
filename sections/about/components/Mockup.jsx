@@ -16,7 +16,7 @@ function Mockup() {
       initial={{ x: -100 }}
       whileInView={{ x: 0 }}
       // animate={{ x: 0 }}
-      transition={{ duration: 1, type: "tween", delay: 0.5 }}
+      transition={{ duration: 1, type: "tween", delay: 0.3 }}
       className={styles.container}
       key="hellowelhfsdfh"
     >

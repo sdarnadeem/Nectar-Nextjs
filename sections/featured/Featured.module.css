@@ -1,25 +1,21 @@
-.featured-section {
+.featuredSection {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
 }
 
-.featured-section img {
+.featuredSection img {
   clip-path: inset(0% 0% 0% 0%);
 }
 
-.featured-section h6 {
+.featuredSection h6 {
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-.featured-section p {
-  font-size: 15px;
-}
-
-.featured-section .featured-row-layout,
-.featured-section .featured-column-layout {
+.featuredSection .featuredRowLayout,
+.featuredSection .featuredColumnLayout {
   display: grid;
   gap: 10px;
 }
@@ -56,33 +52,41 @@
   text-align: center;
 }
 
-.featured-section .featured-row-layout {
+.featuredSection .featuredRowLayout {
   grid-template-columns: repeat(2, auto);
 }
-.featured-section .featured-row-layout img {
+.featuredSection .featuredRowLayout img {
   width: 100%;
   object-fit: cover;
 }
 
-.featured-section .featured-column-layout {
+.featuredSection .featuredColumnLayout {
   grid-template-columns: 100px auto;
   align-items: flex-end;
 }
-
-.featured-section .featured-column-layout .img-container {
-  width: 100%;
+.featuredSection .imageContainer {
   height: 100vh;
-  position: relative;
+  width: 100%;
+}
+.featuredSection .imageContainer img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 67.5%;
+}
+/* .featuredSection .featuredColumnLayout .imgContainer {
+  height: 100vh !important;
+  position: relative !;
+  background-color: #05cab6;
 }
 
-.featured-section .featured-column-layout .img-container img {
-  width: 100%;
+.featuredSection .featuredColumnLayout .imgContainer img {
   height: 100%;
   object-fit: cover;
   position: absolute;
 }
 
-.featured-section .featured-column-layout .img-container::after {
+.featuredSection .featuredColumnLayout .imgContainer::after {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -90,17 +94,14 @@
   left: 0;
   background-color: rgb(241, 243, 245);
   content: "";
-}
-
-/* .featured-section .featured-column-layout img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
 } */
 
 @media screen and (max-width: 768px) {
   .popup {
     width: 70%;
+  }
+  .featuredSection {
+    height: auto;
   }
 }
 

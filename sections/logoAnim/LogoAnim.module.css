@@ -21,7 +21,7 @@
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   /* opacity: 0; */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 2.3s steps(20, end);
+  animation: typing 2s steps(20, end);
   /* animation-delay: 2s; */
   margin-top: 20px;
 }

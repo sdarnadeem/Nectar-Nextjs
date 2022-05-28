@@ -65,11 +65,14 @@
   display: inline-block;
   list-style: none;
   margin: 10px 30px;
+  position: relative;
 }
 
 .logo {
+  position: relative;
   width: 150px;
   cursor: pointer;
+  height: 50px;
 }
 
 .header nav ul li a {
@@ -84,21 +87,24 @@
 }
 
 .textbox {
-  margin-top: 16%;
+  margin-top: 10%;
   font-size: 22px;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 100px;
 }
 
 .textbox h2 {
-  font-size: 85px;
+  font-size: 70px;
   font-weight: 600;
-  line-height: 100px;
+  line-height: 80px;
+  margin-bottom: 10px;
 }
 .textbox .btn {
   border: none;
   outline: none;
   font-size: 16px;
-  margin-top: 30px;
+  margin-top: 20px;
   color: #fff;
   background: #ff3e3b;
   padding: 14px 20px;

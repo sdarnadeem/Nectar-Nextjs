@@ -4,7 +4,7 @@ import { Menu } from "@mui/material";
 import { MenuItem } from "@mui/material";
 import { Divider } from "@mui/material";
 import AOS from "aos";
-
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 import styles from "./Navbar.module.css";
@@ -42,11 +42,9 @@ function Navbar({
     <>
       <motion.div className={styles.header} data-scroll-section>
         <nav className={styles.nav}>
-          <img
-            className={styles.logo}
-            src="/images/dating/logoo.png"
-            alt="logo"
-          />
+          <div className={styles.logo}>
+            <Image src="/images/dating/logoo.png" alt="logo" layout="fill" />
+          </div>
 
           {/* <h6 className={styles.headerlogo}>Nectar</h6> */}
 

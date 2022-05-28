@@ -8,7 +8,7 @@ const LogoAnim = () => {
   return (
     <motion.div className={c.container}>
       <motion.div
-        animate={{ x: 0, rotate: 360 }}
+        animate={{ x: 0 }}
         initial={{ x: -50 }}
         transition={{ duration: 1.5 }}
         transitionEnd={{ y: "-1500" }}

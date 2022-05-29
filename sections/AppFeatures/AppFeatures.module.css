@@ -21,29 +21,25 @@
   font-weight: 500;
   font-size: 1.4rem !important;
 }
-.para div {
-  height: 3px;
-  width: 130px;
+/* .para div {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
   background-color: black;
   margin-bottom: 1rem;
   animation: lineAnim 2s ease-in-out infinite;
 }
 @keyframes lineAnim {
   0% {
-    opacity: 0;
-    width: 0;
+    transform: translateX(0);
   }
 
   100% {
-    opacity: 1;
-    width: 130px;
+    transform: translateX(130px);
   }
 
-  /* 100% {
-    opacity: 0;
-    width: 0;
-  } */
-}
+} 
+*/
 .para p {
   font-size: 1rem !important;
   margin-bottom: 2rem;

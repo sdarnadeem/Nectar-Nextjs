@@ -6,9 +6,10 @@ import About from "../sections/about/About";
 import AppFeatures from "../sections/AppFeatures/AppFeatures";
 
 import Featured from "../sections/featured/Featured";
+import NewSection from "../sections/newSection/NewSection";
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -35,18 +36,19 @@ export default function Home() {
 
       {!loading && (
         <>
-          <Element name={"navbar"}>
+          {/* <Element name={"navbar"}>
             <NavBar />
-          </Element>
-          <Element name="featured">
+          </Element> */}
+          <NewSection />
+          {/* <Element name="featured">
             <Featured />
-          </Element>
-          <Element name="about">
+          </Element> */}
+          {/* <Element name="about">
             <About />
-          </Element>
-          <Element name="about">
+          </Element> */}
+          {/* <Element name="about">
             <AppFeatures />
-          </Element>
+          </Element> */}
         </>
       )}
     </>

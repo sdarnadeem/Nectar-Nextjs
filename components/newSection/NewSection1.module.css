@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Merriweather:ital,wght@1,900&display=swap");
+
+.container {
+  max-width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 0;
+}
+
+/* // LEFT SIDE */
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+}
+
+.leftSide h2 {
+  font-family: "Merriweather", serif;
+}
+
+.leftSide h2 span {
+  display: block;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.leftSide .bottomText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5rem;
+}
+
+.leftSide .bottomText button {
+  padding: 5px 20px;
+  /* border-radius: 5px; */
+  margin-right: 10rem;
+  background-color: #fc6c85;
+  border: none;
+  color: #333;
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.leftSide .bottomText p {
+  font-size: 1.3rem;
+  padding: 5px 40px;
+  background-color: #e680ff;
+  transform: rotate(-10deg);
+  font-family: "Caveat", cursive;
+}
+
+.rightSide {
+  /* background: blue; */
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  transform: rotate(10deg);
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+}
+
+.singleImage {
+  width: 195px;
+  height: 200px;
+  position: relative;
+  left: 153px;
+  top: 50px;
+}

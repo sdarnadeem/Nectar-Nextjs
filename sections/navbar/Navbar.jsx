@@ -114,7 +114,7 @@ function Navbar({
           </h2>
           <p>Find that special someone who really gets you</p>
           <button disabled type="button" className={styles.btn}>
-            Join the Club
+            Set Me Up
           </button>
         </div>
         <div className={styles.down}>

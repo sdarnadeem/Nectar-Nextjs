@@ -36,16 +36,17 @@ export default function Home() {
 
       {!loading && (
         <>
-          {/* <Element name={"navbar"}>
+          <Element name={"navbar"}>
             <NavBar />
-          </Element> */}
+          </Element>
           <NewSection />
           {/* <Element name="featured">
             <Featured />
-          </Element> */}
-          {/* <Element name="about">
+          </Element>{" "} */}
+          */
+          <Element name="about">
             <About />
-          </Element> */}
+          </Element>
           {/* <Element name="about">
             <AppFeatures />
           </Element> */}

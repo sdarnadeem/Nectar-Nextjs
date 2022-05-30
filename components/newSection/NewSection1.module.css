@@ -3,7 +3,7 @@
 .container {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   padding: 5rem 0;
 }
 

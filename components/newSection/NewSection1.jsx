@@ -3,15 +3,29 @@ import c from "./NewSection1.module.css";
 
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 const NewSection1 = () => {
   return (
     <div className={c.container}>
       <div className={c.leftSide}>
-        <h2>
+        <motion.h2
+          key="hdskjghsaighdjkghjgjggfghgskjghfsgughjsdkgh"
+          initial={{ y: -70 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1, type: "tween", delay: 0.3 }}
+        >
           More than just <span>swiping a photo...</span>
-        </h2>
+        </motion.h2>
         <div className={c.bottomText}>
-          <button>Set me up</button>
+          <motion.button
+            key="hdskjghsaijgjggfghgskjghfsgughjsdkgh"
+            initial={{ y: 100 }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 1, type: "tween", delay: 0.3 }}
+          >
+            Set me up
+          </motion.button>
           <p>
             No catfish
             <br />
@@ -20,7 +34,12 @@ const NewSection1 = () => {
         </div>
       </div>
       <div className={c.rightSide}>
-        <div className={c.image}>
+        <motion.div
+          className={c.image}
+          key="hdskjghsaijgjjdkgkggfghgskjghfsgughjsdkgh"
+          whileInView={{ rotate: "10deg" }}
+          transition={{ duration: 1, type: "tween", delay: 0.3 }}
+        >
           <Image layout="fill" src="/images/mobile.png" alt="mobile" />
           {/* <div className={c.images}>
             <div className={c.singleImage}>
@@ -28,7 +47,7 @@ const NewSection1 = () => {
             </div>
             <Image layout="fill" src="/images/woman2.jpg" alt="woman1" />
           </div> */}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

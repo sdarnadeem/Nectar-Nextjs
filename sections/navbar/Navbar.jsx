@@ -110,8 +110,7 @@ function Navbar({
 
         <div data-aos="zoom-in" className={styles.textbox}>
           <h2>
-            Go On
-            <br /> Your First Date
+            More than <span>just swiping a photo…</span>
           </h2>
           <p>Find that special someone who really gets you</p>
           <button disabled type="button" className={styles.btn}>

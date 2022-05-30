@@ -95,10 +95,15 @@
 }
 
 .textbox h2 {
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 80px;
-  margin-bottom: 10px;
+  line-height: 62px;
+  margin-bottom: 30px;
+}
+
+.textbox h2 span {
+  display: block;
+  font-size: 70px;
 }
 .textbox .btn {
   border: none;

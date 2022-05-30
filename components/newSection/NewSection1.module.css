@@ -119,6 +119,9 @@
 }
 
 @media only screen and (max-width: 650px) {
+  .leftSide {
+    margin-top: 5rem;
+  }
   .container {
     grid-template-columns: 1fr;
     justify-items: start;
@@ -150,6 +153,12 @@
 
 @media only screen and (max-width: 500px) {
   .leftSide .bottomText p {
-    margin-right: 0rem;
+    margin-right: 3rem;
+    transform: rotate(-10deg);
+  }
+
+  .leftSide .bottomText {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

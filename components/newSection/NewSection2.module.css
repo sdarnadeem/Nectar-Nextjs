@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap");
+
+.container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 0;
+}
+
+.left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.right .tip {
+  font-size: 1.3rem;
+  padding: 5px 40px;
+  background-color: #e680ff;
+  transform: translateX(-7rem) rotate(10deg);
+
+  font-family: "Caveat", cursive;
+  margin-top: 3rem;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  transform: rotate(10deg);
+}
+
+.right {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right p {
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+}

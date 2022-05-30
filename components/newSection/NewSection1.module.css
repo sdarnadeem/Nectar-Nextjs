@@ -2,7 +2,6 @@
 
 .container {
   max-width: 100%;
-  height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 5rem 0;

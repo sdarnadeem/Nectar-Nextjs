@@ -65,6 +65,7 @@
   .container {
     grid-template-columns: 1fr;
     padding: 0;
+    padding-top: 8rem;
   }
   .right {
     order: 1;
@@ -73,5 +74,10 @@
 
   .left {
     order: 2;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    padding-top: 20rem;
   }
 }

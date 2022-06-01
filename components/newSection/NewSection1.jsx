@@ -26,28 +26,28 @@ const NewSection1 = () => {
           >
             Set me up
           </motion.button>
-          <p>
+          {/* <p>
             No catfish
             <br />
             No filters
-          </p>
+          </p> */}
         </div>
       </div>
       <div className={c.rightSide}>
-        <motion.div
+        {/* <motion.div
           className={c.image}
           key="hdskjghsaijgjjdkgkggfghgskjghfsgughjsdkgh"
           whileInView={{ rotate: "10deg" }}
           transition={{ duration: 1, type: "tween", delay: 0.3 }}
         >
           <Image layout="fill" src="/images/mobile.png" alt="mobile" />
-          {/* <div className={c.images}>
+          <div className={c.images}>
             <div className={c.singleImage}>
               <Image layout="fill" src="/images/woman1.jpg" alt="woman1" />
             </div>
             <Image layout="fill" src="/images/woman2.jpg" alt="woman1" />
-          </div> */}
-        </motion.div>
+          </div>
+        </motion.div> */}
       </div>
     </div>
   );
